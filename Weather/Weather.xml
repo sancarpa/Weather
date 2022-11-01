@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Weather</name>
+    </assembly>
+    <members>
+        <member name="P:Weather.City.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:Weather.City.WeatherInfo">
+            <summary>
+            OpenWeatherApi response
+            </summary>
+        </member>
+        <member name="P:Weather.City.BusinessesInfo">
+            <summary>
+            YelpApi response
+            </summary>
+        </member>
+        <member name="M:Weather.Controllers.CityInfoController.Get">
+            <summary>
+            Returns all cities' information
+            </summary>
+            <returns>A list of city's information</returns>
+            <response code="200">Successful retrieve</response>
+        </member>
+        <member name="M:Weather.Controllers.CityInfoController.Get(System.String)">
+            <summary>
+            Returns the specified city's information
+            </summary>
+            <param name="cityName">Name of the city</param>
+            <returns>A city's information</returns>
+            <response code="200">Successful retrieve</response>
+        </member>
+        <member name="M:Weather.Loaders.BusinessesLoader.Load(System.String)">
+            <summary>
+            Load the Yelp response
+            </summary>
+            <param name="city">Name of the city</param>
+            <returns>The response string</returns>
+        </member>
+        <member name="M:Weather.Loaders.WeatherLoader.Load(System.String)">
+            <summary>
+            Load OpenWeatherApi response
+            </summary>
+            <param name="city">Name of the city</param>
+            <returns>The response string</returns>
+        </member>
+    </members>
+</doc>
