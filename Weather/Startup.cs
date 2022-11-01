@@ -47,7 +47,7 @@ namespace Weather
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "CityInfo API V");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "CityInfo API V1");
                 c.RoutePrefix = "swagger";
             });
 
